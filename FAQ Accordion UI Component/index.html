@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Share Demo | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">WebShare</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Web Share API Demo</h1>
+        <p>Share content directly to social media and other apps</p>
+    </section>
+
+    <!-- Web Share Demo Section -->
+    <section id="demo" class="share-demo">
+        <h2>Try the Web Share Feature</h2>
+        <div class="share-container">
+            <div class="share-inputs">
+                <input type="text" id="share-title" placeholder="Title (e.g., Check this out!)">
+                <textarea id="share-text" placeholder="Text to share"></textarea>
+                <input type="url" id="share-url" placeholder="URL (https://example.com)">
+                <button id="share-btn" class="btn">Share Content</button>
+            </div>
+            <div class="share-result" id="share-result">
+                <p>Click the share button to test the Web Share API</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Web Share API</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>The Web Share API allows websites to share text, links, and files to native sharing capabilities of the device.</p>
+                <p>This demo shows how to implement the Web Share API in modern browsers. Note that this API is only available in secure contexts (HTTPS) and on supported browsers.</p>
+                <div class="browser-support">
+                    <h3>Browser Support:</h3>
+                    <ul>
+                        <li>Chrome: ✔️ (Android & Desktop)</li>
+                        <li>Safari: ✔️ (iOS & macOS)</li>
+                        <li>Edge: ✔️ (Android & Desktop)</li>
+                        <li>Firefox: ❌ (Not supported)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/web-share-diagram.png" alt="Web Share API Diagram">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API" target="_blank">MDN Documentation</a></li>
+                    <li><a href="https://web.dev/web-share/" target="_blank">Web.dev Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <button class="social-share" data-platform="twitter">Twitter</button>
+                    <button class="social-share" data-platform="facebook">Facebook</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 WebShare Demo. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
